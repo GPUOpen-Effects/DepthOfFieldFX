@@ -18,6 +18,7 @@ workspace "AMD_LIB"
 project "AMD_LIB"
    kind "StaticLib"
    language "C++"
+   characterset "Unicode"
    location "../build"
    filename ("AMD_LIB" .. _AMD_VS_SUFFIX)
    uuid "0D2AEA47-7909-69E3-8221-F4B9EE7FCF44"
@@ -29,25 +30,26 @@ project "AMD_LIB"
    rtti "Off"
 
    -- Specify WindowsTargetPlatformVersion here for VS2015
-   windowstarget (_AMD_WIN_SDK_VERSION)
+   systemversion (_AMD_WIN_SDK_VERSION)
 
    files { "../inc/**.h", "../src/**.h", "../src/**.cpp", "../src/**.inl", "../src/**.hlsl", "../../common/inc/*.h", "../../../ags_lib/inc/*.h" }
    includedirs { "../inc", "../../common/inc", "../../../ags_lib/inc" }
 
    filter "configurations:Debug"
       defines { "WIN32", "_DEBUG", "_WINDOWS", "_LIB", "_WIN32_WINNT=0x0601" }
-      flags { "Symbols", "FatalWarnings", "Unicode" }
+      flags { "FatalWarnings" }
       -- add "d" to the end of the library name for debug builds
       targetsuffix "d"
+      symbols "On"
 
    filter "configurations:Release"
       defines { "WIN32", "NDEBUG", "_WINDOWS", "_LIB", "_WIN32_WINNT=0x0601" }
-      flags { "FatalWarnings", "Unicode" }
+      flags { "FatalWarnings" }
       optimize "On"
 
    filter "configurations:Release_MT"
       defines { "WIN32", "NDEBUG", "_WINDOWS", "_LIB", "_WIN32_WINNT=0x0601" }
-      flags { "FatalWarnings", "Unicode" }
+      flags { "FatalWarnings" }
       -- link against the static runtime to avoid introducing a dependency
       -- on the particular version of Visual Studio used to build the DLLs
       flags { "StaticRuntime" }
