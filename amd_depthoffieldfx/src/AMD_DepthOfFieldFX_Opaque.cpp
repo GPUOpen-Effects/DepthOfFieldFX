@@ -56,7 +56,6 @@ struct float4
 
 struct float2
 {
-    float2(float x_, float y_) : x(x_), y(y_) {}
     float x;
     float y;
 };
@@ -469,8 +468,8 @@ BOOL DEPTHOFFIELDFX_OPAQUE_DESC::update_constant_buffer(const DEPTHOFFIELDFX_DES
         pParams->invSourceResolution.y = 1.0f / static_cast<float>(desc.m_screenSize.y);
         pParams->padding               = desc.m_pOpaque->m_padding;
         pParams->scale_factor          = float(1 << desc.m_scaleFactor);
-        memcpy(pParams->bartlettData, s_bartlettData, sizeof(dofParams::bartlettData));
-        memcpy(pParams->boxBartlettData, s_boxBartlettData, sizeof(dofParams::boxBartlettData));
+        memcpy(pParams->bartlettData, s_bartlettData, sizeof(s_bartlettData));
+        memcpy(pParams->boxBartlettData, s_boxBartlettData, sizeof(s_boxBartlettData));
 
         pCtx->Unmap(m_pDofParamsCB, 0);
     }
