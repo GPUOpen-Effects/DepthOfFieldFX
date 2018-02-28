@@ -14,10 +14,10 @@ The library implements depth of field using a Bartlett and Box filter. There is 
 * AMD Radeon&trade; GCN-based GPU (HD 7000 series or newer)
   * Or other DirectX&reg; 11 compatible discrete GPU with Shader Model 5 support
 * 64-bit Windows&reg; 7 (SP1 with the [Platform Update](https://msdn.microsoft.com/en-us/library/windows/desktop/jj863687.aspx)), Windows&reg; 8.1, or Windows&reg; 10
-* Visual Studio&reg; 2013 or Visual Studio&reg; 2015
+* Visual Studio&reg; 2013, Visual Studio&reg; 2015 or  Visual Studio&reg; 2017
 
 ### Getting started
-* Visual Studio solutions for VS2013 and VS2015 can be found in the `amd_depthoffieldfx_sample\build` directory.
+* Visual Studio solutions for VS2013, VS2015 and VS2017 can be found in the `amd_depthoffieldfx_sample\build` directory.
 * There are also solutions for just the core library in the `amd_depthoffieldfx\build` directory.
 * Additional documentation is available in the `amd_depthoffieldfx\doc` directory.
 
@@ -28,7 +28,7 @@ This version of Premake has been modified from the stock version to use the prop
 
 By default, Visual Studio 2013 projects will compile against the Windows 8.1 SDK. However, the VS2013 projects generated with this version of Premake will use the next higher SDK (i.e. the Windows 10 SDK), if the newer SDK exists on the user's machine.
 
-For Visual Studio 2015, the `systemversion` Premake function is used to add the `WindowsTargetPlatformVersion` element to the project file, to specify which version of the Windows SDK will be used. To change `WindowsTargetPlatformVersion` for Visual Studio 2015, change the value for `_AMD_WIN_SDK_VERSION` in `premake\amd_premake_util.lua` and regenerate the Visual Studio files.
+For Visual Studio 2015 and 2017, the `systemversion` Premake function is used to add the `WindowsTargetPlatformVersion` element to the project file, to specify which version of the Windows SDK will be used. To change `WindowsTargetPlatformVersion` for Visual Studio 2015 and 2017, change the value for `_AMD_WIN_SDK_VERSION` in `premake\amd_premake_util.lua` and regenerate the Visual Studio files.
 
 ### Third-Party Software
 * DXUT is distributed under the terms of the MIT License. See `framework\d3d11\dxut\MIT.txt`.
