@@ -63,7 +63,7 @@
       <TreatWarningAsError>true</TreatWarningAsError>
       <PreprocessorDefinitions>AMD_DEPTHOFFIELDFX_COMPILE_DYNAMIC_LIB=1;WIN32;_DEBUG;DEBUG;PROFILE;_WINDOWS;_WIN32_WINNT=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\src\ResourceFiles;..\..\AMD_DepthOfFieldFX\inc;..\..\amd_lib\shared\common\inc;..\..\amd_lib\shared\d3d11\inc;..\..\framework\d3d11\amd_sdk\inc;..\..\framework\d3d11\dxut\Core;..\..\framework\d3d11\dxut\Optional;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <FloatingPointModel>Fast</FloatingPointModel>
     </ClCompile>
