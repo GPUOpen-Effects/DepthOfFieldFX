@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup Label="ProjectConfigurations">
     <ProjectConfiguration Include="DLL_Debug|Win32">
       <Configuration>DLL_Debug</Configuration>
@@ -48,175 +48,166 @@
     <Keyword>Win32Proj</Keyword>
     <RootNamespace>AMD_DepthOfFieldFX</RootNamespace>
     <ProjectName>AMD_DepthOfFieldFX</ProjectName>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Lib_Debug|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Lib_Debug|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Lib_Release|Win32'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Lib_Release|x64'" Label="Configuration">
     <ConfigurationType>StaticLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release_MT|Win32'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release_MT|x64'" Label="Configuration">
     <ConfigurationType>DynamicLibrary</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
     <CharacterSet>Unicode</CharacterSet>
-    <PlatformToolset>v120</PlatformToolset>
+    <PlatformToolset>v141</PlatformToolset>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
   <ImportGroup Label="ExtensionSettings">
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="Windows10SDKVS13_x86.props" Condition="exists('$(ProgramFiles)\Windows Kits\10\Include\10.0.10240.0\um\Windows.h')" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="Windows10SDKVS13_x64.props" Condition="exists('$(ProgramFiles)\Windows Kits\10\Include\10.0.10240.0\um\Windows.h')" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DLL_Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="Windows10SDKVS13_x86.props" Condition="exists('$(ProgramFiles)\Windows Kits\10\Include\10.0.10240.0\um\Windows.h')" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DLL_Release|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="Windows10SDKVS13_x64.props" Condition="exists('$(ProgramFiles)\Windows Kits\10\Include\10.0.10240.0\um\Windows.h')" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Lib_Debug|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="Windows10SDKVS13_x86.props" Condition="exists('$(ProgramFiles)\Windows Kits\10\Include\10.0.10240.0\um\Windows.h')" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Lib_Debug|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="Windows10SDKVS13_x64.props" Condition="exists('$(ProgramFiles)\Windows Kits\10\Include\10.0.10240.0\um\Windows.h')" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Lib_Release|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="Windows10SDKVS13_x86.props" Condition="exists('$(ProgramFiles)\Windows Kits\10\Include\10.0.10240.0\um\Windows.h')" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Lib_Release|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="Windows10SDKVS13_x64.props" Condition="exists('$(ProgramFiles)\Windows Kits\10\Include\10.0.10240.0\um\Windows.h')" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DLL_Release_MT|Win32'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="Windows10SDKVS13_x86.props" Condition="exists('$(ProgramFiles)\Windows Kits\10\Include\10.0.10240.0\um\Windows.h')" />
   </ImportGroup>
   <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='DLL_Release_MT|x64'">
     <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
-    <Import Project="Windows10SDKVS13_x64.props" Condition="exists('$(ProgramFiles)\Windows Kits\10\Include\10.0.10240.0\um\Windows.h')" />
   </ImportGroup>
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>..\lib\VS2013\Win32\DLL_Debug\</OutDir>
-    <IntDir>VS2013\Win32\DLL_Debug\</IntDir>
+    <OutDir>..\lib\VS2017\Win32\DLL_Debug\</OutDir>
+    <IntDir>VS2017\Win32\DLL_Debug\</IntDir>
     <TargetName>GPUOpen_DepthOfFieldFX_x86d</TargetName>
     <TargetExt>.dll</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <OutDir>..\lib\VS2013\x64\DLL_Debug\</OutDir>
-    <IntDir>VS2013\x64\DLL_Debug\</IntDir>
+    <OutDir>..\lib\VS2017\x64\DLL_Debug\</OutDir>
+    <IntDir>VS2017\x64\DLL_Debug\</IntDir>
     <TargetName>GPUOpen_DepthOfFieldFX_x64d</TargetName>
     <TargetExt>.dll</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>..\lib\VS2013\Win32\DLL_Release\</OutDir>
-    <IntDir>VS2013\Win32\DLL_Release\</IntDir>
+    <OutDir>..\lib\VS2017\Win32\DLL_Release\</OutDir>
+    <IntDir>VS2017\Win32\DLL_Release\</IntDir>
     <TargetName>GPUOpen_DepthOfFieldFX_x86</TargetName>
     <TargetExt>.dll</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>..\lib\VS2013\x64\DLL_Release\</OutDir>
-    <IntDir>VS2013\x64\DLL_Release\</IntDir>
+    <OutDir>..\lib\VS2017\x64\DLL_Release\</OutDir>
+    <IntDir>VS2017\x64\DLL_Release\</IntDir>
     <TargetName>GPUOpen_DepthOfFieldFX_x64</TargetName>
     <TargetExt>.dll</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Lib_Debug|Win32'">
-    <OutDir>..\lib\VS2013\Win32\Lib_Debug\</OutDir>
-    <IntDir>VS2013\Win32\Lib_Debug\</IntDir>
+    <OutDir>..\lib\VS2017\Win32\Lib_Debug\</OutDir>
+    <IntDir>VS2017\Win32\Lib_Debug\</IntDir>
     <TargetName>GPUOpen_DepthOfFieldFX_x86d</TargetName>
     <TargetExt>.lib</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Lib_Debug|x64'">
-    <OutDir>..\lib\VS2013\x64\Lib_Debug\</OutDir>
-    <IntDir>VS2013\x64\Lib_Debug\</IntDir>
+    <OutDir>..\lib\VS2017\x64\Lib_Debug\</OutDir>
+    <IntDir>VS2017\x64\Lib_Debug\</IntDir>
     <TargetName>GPUOpen_DepthOfFieldFX_x64d</TargetName>
     <TargetExt>.lib</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Lib_Release|Win32'">
-    <OutDir>..\lib\VS2013\Win32\Lib_Release\</OutDir>
-    <IntDir>VS2013\Win32\Lib_Release\</IntDir>
+    <OutDir>..\lib\VS2017\Win32\Lib_Release\</OutDir>
+    <IntDir>VS2017\Win32\Lib_Release\</IntDir>
     <TargetName>GPUOpen_DepthOfFieldFX_x86</TargetName>
     <TargetExt>.lib</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Lib_Release|x64'">
-    <OutDir>..\lib\VS2013\x64\Lib_Release\</OutDir>
-    <IntDir>VS2013\x64\Lib_Release\</IntDir>
+    <OutDir>..\lib\VS2017\x64\Lib_Release\</OutDir>
+    <IntDir>VS2017\x64\Lib_Release\</IntDir>
     <TargetName>GPUOpen_DepthOfFieldFX_x64</TargetName>
     <TargetExt>.lib</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release_MT|Win32'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>..\lib\VS2013\Win32\DLL_Release_MT\</OutDir>
-    <IntDir>VS2013\Win32\DLL_Release_MT\</IntDir>
+    <OutDir>..\lib\VS2017\Win32\DLL_Release_MT\</OutDir>
+    <IntDir>VS2017\Win32\DLL_Release_MT\</IntDir>
     <TargetName>GPUOpen_DepthOfFieldFX_x86</TargetName>
     <TargetExt>.dll</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='DLL_Release_MT|x64'">
     <LinkIncremental>false</LinkIncremental>
-    <OutDir>..\lib\VS2013\x64\DLL_Release_MT\</OutDir>
-    <IntDir>VS2013\x64\DLL_Release_MT\</IntDir>
+    <OutDir>..\lib\VS2017\x64\DLL_Release_MT\</OutDir>
+    <IntDir>VS2017\x64\DLL_Release_MT\</IntDir>
     <TargetName>GPUOpen_DepthOfFieldFX_x64</TargetName>
     <TargetExt>.dll</TargetExt>
   </PropertyGroup>
@@ -225,7 +216,7 @@
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
-      <PreprocessorDefinitions>_USRDLL;AMD_DEPTHOFFIELDFX_COMPILE_DYNAMIC_LIB=1;WIN32;_DEBUG;_WINDOWS;_WIN32_WINNT=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_USRDLL;AMD_DEPTHOFFIELDFX_COMPILE_DYNAMIC_LIB=1;WIN32;_DEBUG;_WINDOWS;_WIN32_WINNT=0x0601;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\inc;..\..\amd_lib\shared\common\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
@@ -236,13 +227,13 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ImportLibrary>..\lib\VS2013\Win32\DLL_Debug\GPUOpen_DepthOfFieldFX_x86d.lib</ImportLibrary>
+      <ImportLibrary>..\lib\VS2017\Win32\DLL_Debug\GPUOpen_DepthOfFieldFX_x86d.lib</ImportLibrary>
       <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
     </Link>
     <PostBuildEvent>
-      <Command>copy /b "..\lib\VS2013\Win32\DLL_Debug\$(TargetName).lib" +,, "..\lib\VS2013\Win32\DLL_Debug\" &gt; nul
-xcopy "..\lib\VS2013\Win32\DLL_Debug\$(TargetName).dll"  "..\lib" /H /R /Y &gt; nul
-xcopy "..\lib\VS2013\Win32\DLL_Debug\$(TargetName).lib"  "..\lib" /H /R /Y &gt; nul</Command>
+      <Command>copy /b "..\lib\VS2017\Win32\DLL_Debug\$(TargetName).lib" +,, "..\lib\VS2017\Win32\DLL_Debug\" &gt; nul
+xcopy "..\lib\VS2017\Win32\DLL_Debug\$(TargetName).dll"  "..\lib" /H /R /Y &gt; nul
+xcopy "..\lib\VS2017\Win32\DLL_Debug\$(TargetName).lib"  "..\lib" /H /R /Y &gt; nul</Command>
       <Message>Copying build output to lib directory...</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -251,9 +242,9 @@ xcopy "..\lib\VS2013\Win32\DLL_Debug\$(TargetName).lib"  "..\lib" /H /R /Y &gt; 
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
-      <PreprocessorDefinitions>_USRDLL;AMD_DEPTHOFFIELDFX_COMPILE_DYNAMIC_LIB=1;WIN32;_DEBUG;_WINDOWS;_WIN32_WINNT=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_USRDLL;AMD_DEPTHOFFIELDFX_COMPILE_DYNAMIC_LIB=1;WIN32;_DEBUG;_WINDOWS;_WIN32_WINNT=0x0601;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\inc;..\..\amd_lib\shared\common\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <ExceptionHandling>false</ExceptionHandling>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
@@ -262,13 +253,13 @@ xcopy "..\lib\VS2013\Win32\DLL_Debug\$(TargetName).lib"  "..\lib" /H /R /Y &gt; 
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <ImportLibrary>..\lib\VS2013\x64\DLL_Debug\GPUOpen_DepthOfFieldFX_x64d.lib</ImportLibrary>
+      <ImportLibrary>..\lib\VS2017\x64\DLL_Debug\GPUOpen_DepthOfFieldFX_x64d.lib</ImportLibrary>
       <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
     </Link>
     <PostBuildEvent>
-      <Command>copy /b "..\lib\VS2013\x64\DLL_Debug\$(TargetName).lib" +,, "..\lib\VS2013\x64\DLL_Debug\" &gt; nul
-xcopy "..\lib\VS2013\x64\DLL_Debug\$(TargetName).dll"  "..\lib" /H /R /Y &gt; nul
-xcopy "..\lib\VS2013\x64\DLL_Debug\$(TargetName).lib"  "..\lib" /H /R /Y &gt; nul</Command>
+      <Command>copy /b "..\lib\VS2017\x64\DLL_Debug\$(TargetName).lib" +,, "..\lib\VS2017\x64\DLL_Debug\" &gt; nul
+xcopy "..\lib\VS2017\x64\DLL_Debug\$(TargetName).dll"  "..\lib" /H /R /Y &gt; nul
+xcopy "..\lib\VS2017\x64\DLL_Debug\$(TargetName).lib"  "..\lib" /H /R /Y &gt; nul</Command>
       <Message>Copying build output to lib directory...</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -277,7 +268,7 @@ xcopy "..\lib\VS2013\x64\DLL_Debug\$(TargetName).lib"  "..\lib" /H /R /Y &gt; nu
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
-      <PreprocessorDefinitions>_USRDLL;AMD_DEPTHOFFIELDFX_COMPILE_DYNAMIC_LIB=1;WIN32;NDEBUG;_WINDOWS;_WIN32_WINNT=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_USRDLL;AMD_DEPTHOFFIELDFX_COMPILE_DYNAMIC_LIB=1;WIN32;NDEBUG;_WINDOWS;_WIN32_WINNT=0x0601;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\inc;..\..\amd_lib\shared\common\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -290,16 +281,15 @@ xcopy "..\lib\VS2013\x64\DLL_Debug\$(TargetName).lib"  "..\lib" /H /R /Y &gt; nu
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <GenerateDebugInformation>false</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <ImportLibrary>..\lib\VS2013\Win32\DLL_Release\GPUOpen_DepthOfFieldFX_x86.lib</ImportLibrary>
+      <ImportLibrary>..\lib\VS2017\Win32\DLL_Release\GPUOpen_DepthOfFieldFX_x86.lib</ImportLibrary>
       <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
     </Link>
     <PostBuildEvent>
-      <Command>copy /b "..\lib\VS2013\Win32\DLL_Release\$(TargetName).lib" +,, "..\lib\VS2013\Win32\DLL_Release\" &gt; nul
-xcopy "..\lib\VS2013\Win32\DLL_Release\$(TargetName).dll"  "..\lib" /H /R /Y &gt; nul
-xcopy "..\lib\VS2013\Win32\DLL_Release\$(TargetName).lib"  "..\lib" /H /R /Y &gt; nul</Command>
+      <Command>copy /b "..\lib\VS2017\Win32\DLL_Release\$(TargetName).lib" +,, "..\lib\VS2017\Win32\DLL_Release\" &gt; nul
+xcopy "..\lib\VS2017\Win32\DLL_Release\$(TargetName).dll"  "..\lib" /H /R /Y &gt; nul
+xcopy "..\lib\VS2017\Win32\DLL_Release\$(TargetName).lib"  "..\lib" /H /R /Y &gt; nul</Command>
       <Message>Copying build output to lib directory...</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -308,7 +298,7 @@ xcopy "..\lib\VS2013\Win32\DLL_Release\$(TargetName).lib"  "..\lib" /H /R /Y &gt
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
-      <PreprocessorDefinitions>_USRDLL;AMD_DEPTHOFFIELDFX_COMPILE_DYNAMIC_LIB=1;WIN32;NDEBUG;_WINDOWS;_WIN32_WINNT=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_USRDLL;AMD_DEPTHOFFIELDFX_COMPILE_DYNAMIC_LIB=1;WIN32;NDEBUG;_WINDOWS;_WIN32_WINNT=0x0601;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\inc;..\..\amd_lib\shared\common\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -321,16 +311,15 @@ xcopy "..\lib\VS2013\Win32\DLL_Release\$(TargetName).lib"  "..\lib" /H /R /Y &gt
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <GenerateDebugInformation>false</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <ImportLibrary>..\lib\VS2013\x64\DLL_Release\GPUOpen_DepthOfFieldFX_x64.lib</ImportLibrary>
+      <ImportLibrary>..\lib\VS2017\x64\DLL_Release\GPUOpen_DepthOfFieldFX_x64.lib</ImportLibrary>
       <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
     </Link>
     <PostBuildEvent>
-      <Command>copy /b "..\lib\VS2013\x64\DLL_Release\$(TargetName).lib" +,, "..\lib\VS2013\x64\DLL_Release\" &gt; nul
-xcopy "..\lib\VS2013\x64\DLL_Release\$(TargetName).dll"  "..\lib" /H /R /Y &gt; nul
-xcopy "..\lib\VS2013\x64\DLL_Release\$(TargetName).lib"  "..\lib" /H /R /Y &gt; nul</Command>
+      <Command>copy /b "..\lib\VS2017\x64\DLL_Release\$(TargetName).lib" +,, "..\lib\VS2017\x64\DLL_Release\" &gt; nul
+xcopy "..\lib\VS2017\x64\DLL_Release\$(TargetName).dll"  "..\lib" /H /R /Y &gt; nul
+xcopy "..\lib\VS2017\x64\DLL_Release\$(TargetName).lib"  "..\lib" /H /R /Y &gt; nul</Command>
       <Message>Copying build output to lib directory...</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -339,7 +328,7 @@ xcopy "..\lib\VS2013\x64\DLL_Release\$(TargetName).lib"  "..\lib" /H /R /Y &gt; 
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
-      <PreprocessorDefinitions>_LIB;AMD_DEPTHOFFIELDFX_COMPILE_DYNAMIC_LIB=0;WIN32;_DEBUG;_WINDOWS;_WIN32_WINNT=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_LIB;AMD_DEPTHOFFIELDFX_COMPILE_DYNAMIC_LIB=0;WIN32;_DEBUG;_WINDOWS;_WIN32_WINNT=0x0601;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\inc;..\..\amd_lib\shared\common\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
@@ -360,9 +349,9 @@ xcopy "..\lib\VS2013\x64\DLL_Release\$(TargetName).lib"  "..\lib" /H /R /Y &gt; 
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
-      <PreprocessorDefinitions>_LIB;AMD_DEPTHOFFIELDFX_COMPILE_DYNAMIC_LIB=0;WIN32;_DEBUG;_WINDOWS;_WIN32_WINNT=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_LIB;AMD_DEPTHOFFIELDFX_COMPILE_DYNAMIC_LIB=0;WIN32;_DEBUG;_WINDOWS;_WIN32_WINNT=0x0601;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\inc;..\..\amd_lib\shared\common\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
-      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
       <Optimization>Disabled</Optimization>
       <ExceptionHandling>false</ExceptionHandling>
       <RuntimeTypeInfo>false</RuntimeTypeInfo>
@@ -381,7 +370,7 @@ xcopy "..\lib\VS2013\x64\DLL_Release\$(TargetName).lib"  "..\lib" /H /R /Y &gt; 
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
-      <PreprocessorDefinitions>_LIB;AMD_DEPTHOFFIELDFX_COMPILE_DYNAMIC_LIB=0;WIN32;NDEBUG;_WINDOWS;_WIN32_WINNT=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_LIB;AMD_DEPTHOFFIELDFX_COMPILE_DYNAMIC_LIB=0;WIN32;NDEBUG;_WINDOWS;_WIN32_WINNT=0x0601;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\inc;..\..\amd_lib\shared\common\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -394,7 +383,6 @@ xcopy "..\lib\VS2013\x64\DLL_Release\$(TargetName).lib"  "..\lib" /H /R /Y &gt; 
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <GenerateDebugInformation>false</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
@@ -407,7 +395,7 @@ xcopy "..\lib\VS2013\x64\DLL_Release\$(TargetName).lib"  "..\lib" /H /R /Y &gt; 
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
-      <PreprocessorDefinitions>_LIB;AMD_DEPTHOFFIELDFX_COMPILE_DYNAMIC_LIB=0;WIN32;NDEBUG;_WINDOWS;_WIN32_WINNT=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_LIB;AMD_DEPTHOFFIELDFX_COMPILE_DYNAMIC_LIB=0;WIN32;NDEBUG;_WINDOWS;_WIN32_WINNT=0x0601;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\inc;..\..\amd_lib\shared\common\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -420,7 +408,6 @@ xcopy "..\lib\VS2013\x64\DLL_Release\$(TargetName).lib"  "..\lib" /H /R /Y &gt; 
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <GenerateDebugInformation>false</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
     </Link>
@@ -433,7 +420,7 @@ xcopy "..\lib\VS2013\x64\DLL_Release\$(TargetName).lib"  "..\lib" /H /R /Y &gt; 
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
-      <PreprocessorDefinitions>_USRDLL;AMD_DEPTHOFFIELDFX_COMPILE_DYNAMIC_LIB=1;WIN32;NDEBUG;_WINDOWS;_WIN32_WINNT=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_USRDLL;AMD_DEPTHOFFIELDFX_COMPILE_DYNAMIC_LIB=1;WIN32;NDEBUG;_WINDOWS;_WIN32_WINNT=0x0601;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\inc;..\..\amd_lib\shared\common\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -447,16 +434,15 @@ xcopy "..\lib\VS2013\x64\DLL_Release\$(TargetName).lib"  "..\lib" /H /R /Y &gt; 
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <GenerateDebugInformation>false</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <ImportLibrary>..\lib\VS2013\Win32\DLL_Release_MT\GPUOpen_DepthOfFieldFX_x86.lib</ImportLibrary>
+      <ImportLibrary>..\lib\VS2017\Win32\DLL_Release_MT\GPUOpen_DepthOfFieldFX_x86.lib</ImportLibrary>
       <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
     </Link>
     <PostBuildEvent>
-      <Command>copy /b "..\lib\VS2013\Win32\DLL_Release_MT\$(TargetName).lib" +,, "..\lib\VS2013\Win32\DLL_Release_MT\" &gt; nul
-xcopy "..\lib\VS2013\Win32\DLL_Release_MT\$(TargetName).dll"  "..\lib" /H /R /Y &gt; nul
-xcopy "..\lib\VS2013\Win32\DLL_Release_MT\$(TargetName).lib"  "..\lib" /H /R /Y &gt; nul</Command>
+      <Command>copy /b "..\lib\VS2017\Win32\DLL_Release_MT\$(TargetName).lib" +,, "..\lib\VS2017\Win32\DLL_Release_MT\" &gt; nul
+xcopy "..\lib\VS2017\Win32\DLL_Release_MT\$(TargetName).dll"  "..\lib" /H /R /Y &gt; nul
+xcopy "..\lib\VS2017\Win32\DLL_Release_MT\$(TargetName).lib"  "..\lib" /H /R /Y &gt; nul</Command>
       <Message>Copying build output to lib directory...</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
@@ -465,7 +451,7 @@ xcopy "..\lib\VS2013\Win32\DLL_Release_MT\$(TargetName).lib"  "..\lib" /H /R /Y 
       <PrecompiledHeader>NotUsing</PrecompiledHeader>
       <WarningLevel>Level4</WarningLevel>
       <TreatWarningAsError>true</TreatWarningAsError>
-      <PreprocessorDefinitions>_USRDLL;AMD_DEPTHOFFIELDFX_COMPILE_DYNAMIC_LIB=1;WIN32;NDEBUG;_WINDOWS;_WIN32_WINNT=0x0601;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>_USRDLL;AMD_DEPTHOFFIELDFX_COMPILE_DYNAMIC_LIB=1;WIN32;NDEBUG;_WINDOWS;_WIN32_WINNT=0x0601;_HAS_EXCEPTIONS=0;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <AdditionalIncludeDirectories>..\inc;..\..\amd_lib\shared\common\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <Optimization>Full</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
@@ -479,16 +465,15 @@ xcopy "..\lib\VS2013\Win32\DLL_Release_MT\$(TargetName).lib"  "..\lib" /H /R /Y 
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
-      <GenerateDebugInformation>false</GenerateDebugInformation>
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <OptimizeReferences>true</OptimizeReferences>
-      <ImportLibrary>..\lib\VS2013\x64\DLL_Release_MT\GPUOpen_DepthOfFieldFX_x64.lib</ImportLibrary>
+      <ImportLibrary>..\lib\VS2017\x64\DLL_Release_MT\GPUOpen_DepthOfFieldFX_x64.lib</ImportLibrary>
       <TreatLinkerWarningAsErrors>true</TreatLinkerWarningAsErrors>
     </Link>
     <PostBuildEvent>
-      <Command>copy /b "..\lib\VS2013\x64\DLL_Release_MT\$(TargetName).lib" +,, "..\lib\VS2013\x64\DLL_Release_MT\" &gt; nul
-xcopy "..\lib\VS2013\x64\DLL_Release_MT\$(TargetName).dll"  "..\lib" /H /R /Y &gt; nul
-xcopy "..\lib\VS2013\x64\DLL_Release_MT\$(TargetName).lib"  "..\lib" /H /R /Y &gt; nul</Command>
+      <Command>copy /b "..\lib\VS2017\x64\DLL_Release_MT\$(TargetName).lib" +,, "..\lib\VS2017\x64\DLL_Release_MT\" &gt; nul
+xcopy "..\lib\VS2017\x64\DLL_Release_MT\$(TargetName).dll"  "..\lib" /H /R /Y &gt; nul
+xcopy "..\lib\VS2017\x64\DLL_Release_MT\$(TargetName).lib"  "..\lib" /H /R /Y &gt; nul</Command>
       <Message>Copying build output to lib directory...</Message>
     </PostBuildEvent>
   </ItemDefinitionGroup>
